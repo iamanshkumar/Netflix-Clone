@@ -1,0 +1,378 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Netflix Sans', sans-serif;
+}
+
+body {
+    background-color: black;
+}
+
+.main{
+    background-image: url("images/bg.jpg");
+    height: 70vh ;
+    position: relative;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: max(1500px,100vw);
+}
+
+.main .box{
+     height: 70vh;
+     width: 100%;
+     opacity: 0.7;
+     background-color: rgb(0, 0, 0) ;
+     position: absolute;
+     top: 0;
+}
+
+
+
+.nav{
+    height: 62px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80vw;
+    gap: 200px;
+}
+
+.nav-btns{
+    display: flex;
+    gap: 10px;
+}
+.nav img {
+    width: 150px;
+    position: relative;
+    z-index: 10;
+}
+
+.nav button {
+    position: relative;
+    z-index: 10;
+    color: white;
+    background-color: red;
+    border: none;
+    font-family: 'Netflix Sans';
+    font-size: 17px;
+    border-radius: 5px;
+    padding: 5px 10px;
+}
+
+.nav select{
+    background-color: black;
+    color: white;
+    position: relative;
+    z-index: 10;
+    font-size: 16px;
+    width: 100px;
+    height: 35px;
+    font-weight: 400;
+    font-family: 'Netflix Sans';
+    border-radius: 5px;
+}
+
+
+.hero{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: calc(100% - 62px);
+    color: white;
+    position: relative;
+    padding: 0 30px;
+    text-align: center;
+    gap: 5px;
+    
+}
+
+.hero .first{
+    display: flex;
+    justify-content: center;
+    width: 600px;
+    font-family: 'Netflix Sans';
+    font-size: 56px;
+    font-weight: 900;
+    align-self:  center;
+    margin: 0%;
+}
+
+.hero .second{
+    display: flex;
+    justify-content: center;
+    width: 508px;
+    font-family: 'Netflix Sans';
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.hero .third{
+    display: flex;
+    justify-content: center;
+    width: 600px;
+    font-family: 'Netflix Sans';
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.hero input {
+    background-color: black;
+    color: white;
+    width: 24vw;
+    height: 56px;
+    border: 1px solid rgb(107, 107, 107);
+    border-radius: 5px;
+    padding: 0 10px; /* Added padding for a bit more spacing inside */
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+.hero button {
+    font-size: 24px;
+    font-weight: 500;
+    font-family: 'Netflix Sans';
+    width: 13vw;
+    height: 56px;
+    color: white;
+    background-color: red;
+    border: none;
+    border-radius: 5px;
+    padding: 0 20px; /* Added padding for balance with input field */
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+.hero :nth-child(5) {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-self: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.separation{
+    height: 11px;
+    background-color: rgb(106, 106, 106);
+}
+
+
+.btn {
+    padding: 3px 8px;
+    font-weight: 400;
+    color: white;
+    background-color: rgba(248, 243, 243, 0.021);
+    border-radius: 4px;
+    border: 1px solid white;
+    cursor: pointer;
+
+}
+
+.btn-red {
+    background-color: red;
+    color: white;
+    padding: 3px 24px;
+    font-size: 20px;
+    border-radius: 4px;
+    font-weight: 400;
+}
+
+.btn-red-sm {
+    background-color: red;
+    color: white;
+}
+
+.hero-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+}
+
+.main input {
+    padding: 7px 101px 8px 14px;
+    color: white;
+    font-size: 12px;
+    border-radius: 4px;
+    background-color: rgba(23, 23, 23, 0.7);
+    border: 1px solid rgba(246, 238, 238, 0.5);
+}
+
+.first {
+    display: flex;
+    justify-content: center;
+    max-width: 70vw;
+    margin: auto;
+    color: white;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.secImg {
+    position: relative;
+}
+
+.secImg img {
+    width: 555px;
+    position: relative;
+    z-index: 10;
+}
+
+.secImg video {
+    position: absolute;
+    top: 51px;
+    right: 0;
+    width: 555px;
+}
+
+section.first>div {
+    display: flex;
+    flex-direction: column;
+    padding: 34px 0;
+}
+
+section.first>div :nth-child(1) {
+    font-size: 48px;
+    font-weight: bolder;
+}
+
+
+section.first>div :nth-child(2) {
+    font-size: 24px;
+
+}
+
+
+.faq h2 {
+    text-align: center;
+    font-size: 48px;
+}
+
+.faq {
+    background: black;
+    color: white;
+    padding: 34px;
+}
+
+.faqbox:hover {
+    background-color: #414141;
+    color: white;
+}
+
+.faqbox svg {
+    filter: invert(1);
+}
+
+.faqbox {
+    transition: all 1s ease-out;
+    font-size: 24px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #2d2d2d;
+    padding: 24px;
+    max-width: 60vw;
+    margin: 34px auto;
+    cursor: pointer;
+}
+
+footer {
+    color: white;
+    max-width: 60vw;
+    margin: auto;
+    padding: 60px;
+}
+
+footer .questions {
+    padding: 34px 0;
+}
+
+
+.footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    color: white;
+}
+
+
+
+@media screen and (max-width: 1300px) {
+
+    nav{
+        max-width: 90vw;
+    }
+
+    .first {
+        flex-wrap: wrap;
+    }
+
+    .secImg img {
+        width: 305px;
+    }
+
+    .secImg video {
+        width: 305px;
+    }
+
+    .hero> :nth-child(1) {
+        font-size: 32px;
+    }
+
+    .hero> :nth-child(2) {
+        font-size: 18px;
+    }
+
+    .hero> :nth-child(3) {
+        font-size: 18px;
+    }
+
+    .hero-buttons {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 16px;
+    }
+
+    .faq h2 {
+        text-align: center;
+        font-size: 32px;
+    }
+
+    footer {
+        max-width: 90vw;
+        padding: 75px 0;
+    }
+
+    .footer-item{
+        align-items: center;
+    }
+ 
+
+}
+
+
+
+@media screen and (max-width: 1300px) {
+
+    .footer {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 25px;
+    }
+}
+
+
+.footer a {
+    font-size: 14px;
+    color: white;
+}
+
+.footer-item {
+    display: flex;
+    flex-direction: column;
+    gap: 23px;
+}
